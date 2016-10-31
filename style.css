@@ -1,0 +1,9 @@
+h3{
+   text-align:center
+}
+.dashboard-block{
+    margin-left:15px;
+    width:100px;height:200px;
+    border:solid 1px;
+    text-align:center;
+}
