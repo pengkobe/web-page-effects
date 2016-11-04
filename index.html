@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 	<meta name="renderer" content="webkit" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, 
-    maximum-scale=1.0, minimum-scale=1.0"/>
+    maximum-scale=1.0, minimum-scale=1.0" />
 	<title>web-page-effects</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 	<div class="dashboard-block">
-		<h3 >仪表盘效果</h3>
+		<h3>仪表盘效果</h3>
 		<canvas id="showdashboard" width="82" height="82"></canvas>
 	</div>
+
+	<div class="svg_menu_list-div">
+		<h3>SVG闭合折线</h3>
+		<div id="svg_menu_list"></div>
+	</div>
+
+	<template id="svg_tpl">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="181" height="120">
+			<desc>Created by yipeng</desc>
+			<defs>
+				<linearGradient x1="0" y1="0" x2="1" y2="0" id="highcharts-26">
+					<stop offset="0.2" stop-color="rgb(0,0,0)" stop-opacity="0.7"></stop>
+					<stop offset="0.83" stop-color="rgb(0,255,0)" stop-opacity="1"></stop>
+					<stop offset="0.84" stop-color="rgb(0,255,0)" stop-opacity="0.6"></stop>
+					<stop offset="1" stop-color="rgb(0,255,0)" stop-opacity="0.6"></stop>
+				</linearGradient>
+			</defs>
+			<path fill="#2D2D30" d="M 0 0 L 0 120 150 120 180 60 150 0 0 0" 
+			stroke="url(#highcharts-26)" stroke-width="2" subitem="false"
+				zIndex="0"></path>
+		</svg>
+	</template>
+
+
 	<script src="canvas/dashboard.js"></script>
+	<script src="svg/scrollmenu.js"></script>
+
 </body>
 
 </html>

@@ -1,9 +1,24 @@
-h3{
-   text-align:center
+h3 {
+    text-align: center
 }
-.dashboard-block{
-    margin-left:15px;
-    width:100px;height:200px;
-    border:solid 1px;
-    text-align:center;
+
+.dashboard-block {
+    margin-left: 15px;
+    width: 100px;
+    height: 200px;
+    border: solid 1px;
+    text-align: center;
+}
+.svg_menu_list-div{
+    overflow-x: scroll;
+}
+
+.svg-menu-ul {
+    position: relative;
+}
+
+.svg-menu-li {
+    float: left;
+    position: relative;
+    margin-left: -40px;
 }
