@@ -12,12 +12,18 @@
 </head>
 
 <body>
+	<!-- 知乎登录效果 -->
+	<div class="zhihu-login-effect-block" >
+		
+		<canvas id="zhihu_login_effect"></canvas>
+	</div>
+
 	<div class="dashboard-block">
 		<h3>仪表盘效果</h3>
 		<canvas id="showdashboard" width="82" height="82"></canvas>
 	</div>
 
-	<div class="svg_menu_list-div">
+	<div class="svg-menu-list-div">
 		<h3>SVG闭合折线</h3>
 		<div id="svg_menu_list"></div>
 	</div>
@@ -33,14 +39,14 @@
 					<stop offset="1" stop-color="rgb(0,255,0)" stop-opacity="0.6"></stop>
 				</linearGradient>
 			</defs>
-			<path fill="#2D2D30" d="M 0 0 L 0 120 150 120 180 60 150 0 0 0" 
-			stroke="url(#highcharts-26)" stroke-width="2" subitem="false"
+			<path fill="#2D2D30" d="M 0 0 L 0 120 150 120 180 60 150 0 0 0" stroke="url(#highcharts-26)" stroke-width="2" subitem="false"
 				zIndex="0"></path>
 		</svg>
 	</template>
 
 
 	<script src="canvas/dashboard.js"></script>
+	<script src="canvas/zhihu_login_effect.js"></script>
 	<script src="svg/scrollmenu.js"></script>
 
 </body>

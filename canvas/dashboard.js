@@ -43,7 +43,7 @@
             ctx.fillStyle = 'rgb(255,' + parseInt(2 * (1 - value) * 255) + ',0)';
         }
         ctx.textAlign = "center";
-        ctx.fillText(value * 100, 0, radius - 11);
+        ctx.fillText(parseInt(value * 100), 0, radius - 11);
         ctx.restore();
     }
 
