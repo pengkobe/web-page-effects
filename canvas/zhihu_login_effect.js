@@ -63,8 +63,7 @@
     // 圆圈
     var circleArr = [];
     function initCircle() {
-        //初始化30个圆形对象,放到数组中
-        for (var i = 0; i < 30; i++) {
+        for (var i = 0; i < 15; i++) {
             var obj = new Circle();
             obj.draw();
             obj.move();
@@ -94,7 +93,7 @@
                 var C = 1 / l * 7 - 0.009;
                 var alpha = C > 0.03 ? 0.03 : C;
                 ctx.strokeStyle = 'rgba(0,0,0,' + alpha + ')';
-                console.log(l);
+                //console.log(l);
                 ctx.beginPath();
                 ctx.lineWidth = 2;
                 ctx.moveTo(dxdy[i].dx, dxdy[i].dy);

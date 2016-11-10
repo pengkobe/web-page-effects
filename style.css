@@ -52,3 +52,7 @@ h3 {
     left: 0px;
     z-index: -1;
 }
+.water-effect-block{
+    margin-top: 10px;
+    background: #333;
+}
