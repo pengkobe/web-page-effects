@@ -10,6 +10,7 @@
 	<title>web-page-effects</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css3/water_effect.css">
+	<link rel="stylesheet" type="text/css" href="svg/svg-animation.css">
 </head>
 
 <body>
@@ -48,6 +49,45 @@
 		</svg>
 	</template>
 
+	<h5>箭头动画(鼠标移至下方)</h5>
+	<svg width="360" height="52" viewBox="0 0 89.4 12.4">
+		<line class="arrow-line" x1="0" y1="6.2" x2="59.6" y2="6.2"></line>
+		<line class="arrow-head" x1="54.7" y1="0.7" x2="60.5" y2="6.5"></line>
+		<line class="arrow-head" x1="54.7" y1="11.7" x2="60.5" y2="5.8"></line>
+	</svg>
+
+	<h5>贝塞尔曲线</h5>
+	<svg width="190" height="160">
+		<path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" stroke="black" fill="transparent" />
+	</svg>
+
+	<h5>虚线的描线动效结合剪裁或者遮罩</h5>
+	<svg width="300" height="100" viewBox="0 0 300 100">
+		<defs>
+			<clipPath id="dash" class="dash">
+				<rect x="0" y="20" width="10" height="34"></rect>
+				<rect x="20" y="20" width="10" height="34"></rect>
+				<rect x="40" y="20" width="10" height="34"></rect>
+				<rect x="60" y="20" width="10" height="34"></rect>
+				<rect x="80" y="20" width="10" height="34"></rect>
+			</clipPath>
+			<mask id="mask-dash" class="mask_dash">
+				<rect x="0" y="20" width="10" height="34"></rect>
+				<rect x="20" y="20" width="10" height="34"></rect>
+				<rect x="40" y="20" width="10" height="34"></rect>
+				<rect x="60" y="20" width="10" height="34"></rect>
+				<rect x="80" y="20" width="10" height="34"></rect>
+			</mask>
+		</defs>
+
+		<g clip-path="url(#dash)">
+			<line class="line" x1="0" y1="28" x2="100" y2="28"></line>
+		</g>
+		<g mask="url(#mask-dash)">
+			<rect x="0" y="36" width="100" height="8" fill="#eee"></rect>
+			<line class="line" x1="0" y1="40" x2="100" y2="40"></line>
+		</g>
+	</svg>
 
 	<script src="canvas/dashboard.js"></script>
 	<script src="canvas/zhihu_login_effect.js"></script>

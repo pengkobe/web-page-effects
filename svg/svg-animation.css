@@ -1,0 +1,71 @@
+/* stage 1
+svg line {
+    stroke: #000;
+    stroke-width: 1px;
+}*/
+
+
+/* stage 2
+svg line {
+    stroke: #000;
+    stroke-width: 1px;
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    transition: stroke-dashoffset ease-in .5s;
+}
+
+svg:hover line {
+    stroke-dashoffset: 0;
+}*/
+
+
+/* stage 3*/
+
+svg line {
+    fill: #000;
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+.arrow-line {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    transition: stroke-dashoffset ease-in .5s .2s;
+}
+
+.arrow-head {
+    stroke-dasharray: 9;
+    stroke-dashoffset: -9;
+    transition: stroke-dashoffset ease-in .2s;
+}
+
+svg:hover line {
+    stroke-dashoffset: 0;
+}
+
+svg:hover .arrow-line {
+    transition: stroke-dashoffset ease-in .5s;
+}
+
+svg:hover .arrow-head {
+    transition: stroke-dashoffset ease-in .2s .5s;
+}
+
+
+/*虚线的描线动效结合剪裁或者遮罩*/
+
+.mask_dash rect {
+    fill: #fff;
+}
+
+.line {
+    stroke: #000;
+    stroke-width: 8px;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    transition: stroke-dashoffset ease-in .5s;
+}
+
+svg:hover .line {
+    stroke-dashoffset: 0;
+}
