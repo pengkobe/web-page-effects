@@ -1,5 +1,5 @@
 /**
- * 音效
+ * 音效1
  */
 // requestAnim shim layer by Paul Irish
 window.requestAnimFrame = (function () {
@@ -23,7 +23,7 @@ var position = 1;
 
     var hasRendered = false;
 
-    window.InitVoice = function (value) {
+    window.InitVoice1 = function (value) {
         if (canvas.getContext) {
             ctx = canvas.getContext("2d");
             ctx.translate(canvas_width / 2, canvas_height / 2);
@@ -79,9 +79,9 @@ var position = 1;
 /**
  * 数据刷新
  */
-refreshData();
-function refreshData() {
-    requestAnimFrame(refreshData);
+refreshData1();
+function refreshData1() {
+    requestAnimFrame(refreshData1);
     value += 0.1;
     opacity += 0.002;
     if (value > 5) {
@@ -89,5 +89,5 @@ function refreshData() {
         opacity = 0;
     }
     var datetime = new Date().getTime();
-    InitVoice(value);
+    InitVoice1(value);
 }

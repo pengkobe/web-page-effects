@@ -11,6 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css3/water_effect.css">
 	<link rel="stylesheet" type="text/css" href="svg/svg-animation.css">
+	<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="http://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg" rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,9 +29,15 @@
 	</div>
 
 	<div class="dashboard-block">
-		<h3>告警音效</h3>
-		<i class="notice notice-shake glyphicon glyphicon-bell"></i>
-		<canvas id="alarmVoice" width="130" height="60"></canvas>
+		<h3>音效</h3>
+		<div>音效1</div>
+		<canvas id="alarmVoice" width="100" height="30"></canvas>
+		<div>音效2</div>
+		<div  style="position:relative;">
+			<i class="fa fa-bell notice-shake" aria-hidden="true" 
+			 style="color:red;position:absolute;left:42px;top:7px;font-size:14px;"></i>
+			<canvas id="alarmVoice2" width="100" height="30"></canvas>
+		</div>
 	</div>
 
 	<div class="svg-menu-list-div">
@@ -97,6 +107,7 @@
 
 	<script src="canvas/dashboard.js"></script>
 	<script src="canvas/alarmvoice.js"></script>
+	<script src="canvas/alarmvoice2.js"></script>
 	<script src="canvas/zhihu_login_effect.js"></script>
 	<script src="svg/scrollmenu.js"></script>
 
