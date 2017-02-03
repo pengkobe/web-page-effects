@@ -3,4 +3,6 @@
 
 See:https://pengkobe.github.io/web-page-effects/
 
+## License
+MIT@[yipeng.info](https://yipeng.info)
 
